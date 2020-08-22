@@ -16,11 +16,19 @@ public class Program {
 		System.out.println("=== TESTE 1: seller finById ===");
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
-		System.out.println("=== TESTE 2: seller finById ===");
+		System.out.println("=== TESTE 2: seller finByDepartment ===");
 		Department department = new Department(2,null);
 		List<Seller> list = sellerDao.findByDepartment(department);		
 		
 		for(Seller obj : list) {
+		System.out.println(obj);
+		}
+		
+		System.out.println("=== TESTE 3: seller finByAll ===");
+		
+		List<Seller> list2 = sellerDao.findAll();		
+		
+		for(Seller obj : list2) {
 		System.out.println(obj);
 		}
    }
