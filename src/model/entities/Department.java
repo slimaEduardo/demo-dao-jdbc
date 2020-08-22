@@ -58,6 +58,16 @@ public class Department implements Serializable {
 	public String toString() {
 		return "Department id=" + id + ", name=" + name;
 	}
+
+	public void setId(int int1) {
+		this.id = int1;
+		
+	}
+
+	public void setName(String string) {
+		this.name = string;
+		
+	}
 	
 	
 	
